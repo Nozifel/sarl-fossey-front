@@ -1,0 +1,14 @@
+$color: rgb(177, 40, 31);
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+html{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}

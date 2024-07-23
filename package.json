@@ -10,12 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@primevue/themes": "^4.0.1",
     "nuxt": "^3.12.4",
     "primevue": "^4.0.1",
+    "tailwindcss-primeui": "^0.3.4",
     "vue": "latest"
   },
   "devDependencies": {
-    "@primevue/nuxt-module": "^4.0.1"
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@primevue/nuxt-module": "^4.0.1",
+    "nuxt-gtag": "^2.0.7",
+    "sass": "^1.77.8"
   }
 }
