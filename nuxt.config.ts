@@ -23,3 +23,4 @@ export default defineNuxtConfig({
     id: 'G-4HJDBXG1FK'
   }*/
 });
+
