@@ -1,20 +1,68 @@
 <script lang="ts" setup>
+import { ImgComparisonSlider } from "@img-comparison-slider/vue";
 import DefaultBreadcrumb from "../../components/layout/DefaultBreadcrumb.vue";
+import Row from "~/components/blocs/Row.vue";
 </script>
 
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto mb-20">
     <DefaultBreadcrumb />
 
     <h1>Realisations</h1>
-
-    <Splitter style="height: 300px" class="my-10">
-      <SplitterPanel class="flex items-center justify-center relative">
-        <img src="/logo.png" alt="" class="absolute top-0 left-0">
-      </SplitterPanel>
-      <SplitterPanel class="flex items-center justify-center relative">
-        <img src="/logo.png" alt="" class="absolute top-0 left-0">
-      </SplitterPanel>
-    </Splitter>
   </div>
+
+  <Row :columns="3" :isPrimary="false">
+    <div class="col-span-2">
+      <ImgComparisonSlider class="my-10 border">
+        <!-- eslint-disable -->
+        <img slot="first" src="/villa.webp" class="w-full" alt="" />
+        <img slot="second" src="/villa.webp" class="w-full grayscale" alt="" />
+        <!-- eslint-enable -->
+      </ImgComparisonSlider>
+    </div>
+    <div class="text-white flex justify-center items-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore sit
+      delectus deserunt, excepturi cupiditate omnis repellat amet repellendus
+      id, cumque doloremque inventore consequatur a voluptate. Quod esse porro
+      at?
+    </div>
+  </Row>
+
+  <Row :columns="3">
+    <div class="col-span-2">
+      <div class="text-white flex justify-center items-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore sit
+      delectus deserunt, excepturi cupiditate omnis repellat amet repellendus
+      id, cumque doloremque inventore consequatur a voluptate. Quod esse porro
+      at?
+    </div>
+      <ImgComparisonSlider class="my-10 border">
+        <!-- eslint-disable -->
+        <img slot="first" src="/villa.webp" class="w-full" alt="" />
+        <img slot="second" src="/villa.webp" class="w-full grayscale" alt="" />
+        <!-- eslint-enable -->
+      </ImgComparisonSlider>
+    </div>
+    
+  </Row>
+
+  <Row :columns="3" :isPrimary="false">
+    <div class="col-span-2">
+      <div class="text-white flex justify-center items-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore sit
+      delectus deserunt, excepturi cupiditate omnis repellat amet repellendus
+      id, cumque doloremque inventore consequatur a voluptate. Quod esse porro
+      at?
+    </div>
+      <ImgComparisonSlider class="my-10 border">
+        <!-- eslint-disable -->
+        <img slot="first" src="/villa.webp" class="w-full" alt="" />
+        <img slot="second" src="/villa.webp" class="w-full grayscale" alt="" />
+        <!-- eslint-enable -->
+      </ImgComparisonSlider>
+    </div>
+    
+  </Row>
+
+  <Row :isPrimary="false"> </Row>
 </template>

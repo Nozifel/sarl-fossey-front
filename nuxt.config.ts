@@ -1,7 +1,11 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
-  devtools: { enabled: true },
-  modules: ["@primevue/nuxt-module", "@nuxtjs/tailwindcss"/*, "nuxt-gtag"*/],
+  devtools: { enabled: false },
+  modules: [
+    "@primevue/nuxt-module",
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt"
+  ],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
@@ -18,9 +22,5 @@ export default defineNuxtConfig({
   css: [
     '~/assets/scss/main.scss',
     "@mdi/font/css/materialdesignicons.css"
-  ],
-  /*gtag: {
-    id: 'G-4HJDBXG1FK'
-  }*/
+  ]
 });
-

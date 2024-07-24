@@ -1,10 +1,10 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
+  content: [
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+  ],
+  theme: {},
   plugins: [
     require("tailwindcss-primeui"),
     plugin(function({ addBase, theme }) {
@@ -15,4 +15,9 @@ module.exports = {
       })
     })
   ],
+  safelist: [
+    {
+      pattern: /grid-cols-*/,
+    },
+  ]
 };
