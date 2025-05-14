@@ -9,6 +9,7 @@ export default defineNuxtConfig({
 		"@nuxt/icon",
 		"@nuxt/eslint",
 		"@nuxt/fonts",
+		"@nuxt/content",
 		"nuxt-aos",
 	],
 	app: {
