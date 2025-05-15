@@ -8,6 +8,9 @@ export default defineNuxtConfig({
 			api: "https://nozifel.github.io/sarl-fossey-front/",
 		},
 	},
+	studio: {
+		enabled: true,
+	},
 	modules: [
 		"@primevue/nuxt-module",
 		"@vueuse/nuxt",
