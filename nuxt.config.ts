@@ -5,7 +5,8 @@ export default defineNuxtConfig({
 	devtools: { enabled: false },
 	content: {
 		preview: {
-			api: "https://nozifel.github.io/sarl-fossey-front/",
+			dev: true,
+			api: "https://nozifel.github.io/sarl-fossey-front/content/",
 		},
 	},
 	studio: {
