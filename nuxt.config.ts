@@ -3,6 +3,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
 	compatibilityDate: "2024-04-03",
 	devtools: { enabled: false },
+	content: {
+		preview: {
+			api: "https://api.nuxt.studio",
+		},
+	},
 	modules: [
 		"@primevue/nuxt-module",
 		"@vueuse/nuxt",
