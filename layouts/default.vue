@@ -4,21 +4,23 @@ import Footer from "~/components/layout/Footer.vue";
 </script>
 
 <template>
-  <div id="main">
-    <DefaultHeader />
-    <slot />
-    <Footer />
+	<div>
+		<DefaultHeader />
+		<div id="main" class="p-8 text-white">
+			<slot />
+		</div>
+		<Footer />
 
-    <ScrollTop target="window" :buttonProps="{ severity: 'contrast', raised: true, rounded: true }" />
-  </div>
+		<ScrollTop target="window" :buttonProps="{ severity: 'contrast', raised: true, rounded: true }" />
+	</div>
 </template>
 
 <style scoped>
 #main {
-  margin-top: 115px;
+	margin-top: 128px;
 }
 
 .p-scrolltop {
-  position: fixed !important;
+	position: fixed !important;
 }
 </style>
