@@ -77,7 +77,7 @@ const items = ref([
     label: "L'équipe",
     root: true,
     icon: "mdi mdi-badge-account",
-    link: "/l-equipe",
+    link: "/blog",
   },
   {
     label: "Contact",
