@@ -16,6 +16,7 @@ export default defineNuxtConfig({
 		"@nuxt/fonts",
 		"@nuxt/content",
 		"nuxt-aos",
+		"@nuxthq/studio",
 	],
 	app: {
 		pageTransition: { name: "page", mode: "out-in" },
