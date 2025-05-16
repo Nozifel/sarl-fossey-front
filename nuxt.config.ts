@@ -3,15 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
 	compatibilityDate: "2024-04-03",
 	devtools: { enabled: false },
-	content: {
-		preview: {
-			dev: true,
-			api: "https://nozifel.github.io/sarl-fossey-front/content/",
-		},
-	},
-	studio: {
-		enabled: true,
-	},
+	
 	modules: [
 		"@primevue/nuxt-module",
 		"@vueuse/nuxt",
@@ -20,7 +12,6 @@ export default defineNuxtConfig({
 		"@nuxt/fonts",
 		"@nuxt/content",
 		"nuxt-aos",
-		"@nuxthq/studio",
 	],
 	app: {
 		pageTransition: { name: "page", mode: "out-in" },

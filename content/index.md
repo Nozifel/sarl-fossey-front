@@ -2,4 +2,6 @@
 
 Here is some content.
 
+::callout
 coucou
+::
